@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privatlivspolitik – Egholm Demo</title>
+<style>
+:root { --text: #2b2c2e; --muted: #616265; --bg: #ffffff; --accent: #2e7f30; --line: #d7d7d5; }
+@media (prefers-color-scheme: dark) { :root { --text: #f2f2f2; --muted: #a8a9ab; --bg: #121212; --accent: #6cc46f; --line: #3a3a3a; } }
+body { margin: 0; background: var(--bg); color: var(--text); font: 17px/1.55 Roboto, -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif; }
+main { max-width: 680px; margin: 0 auto; padding: 32px 16px 64px; }
+h1 { font-size: 30px; margin-bottom: 4px; }
+h2 { font-size: 20px; margin-top: 32px; }
+.muted { color: var(--muted); }
+a { color: var(--accent); }
+hr { border: none; border-top: 1px solid var(--line); margin: 40px 0; }
+</style>
+</head>
+<body>
+<main>
+<h1>Privatlivspolitik for Egholm Demo</h1>
+<p class="muted">Senest opdateret: 6. november 2026</p>
+
+<p>Egholm Demo er en intern app til medarbejdere hos Egholm A/S. Den bruges til at holde styr på Egholms demomaskiner og demoredskaber: hvor de står, hvem der har dem, og hvad der er sket med dem. Appen er udviklet af Emil Egholm. Kun medarbejdere med en @egholm.dk-mail kan oprette en konto.</p>
+
+<h2>Hvilke oplysninger gemmer appen?</h2>
+<ul>
+  <li><strong>Din konto:</strong> navn, arbejdsmail og din rolle (medarbejder eller administrator).</li>
+  <li><strong>Det, du registrerer:</strong> maskiner og redskaber, flytninger, udlån, salg og kommentarer. Hver handling gemmes med dit navn og tidspunkt, så historikken viser, hvem der gjorde hvad.</li>
+  <li><strong>Billeder:</strong> fotos af typeskilte og af maskiner, som du selv tager eller vælger.</li>
+  <li><strong>Placering:</strong> kun når du trykker "Brug min placering". Placeringen bruges til at foreslå den nærmeste lokation og gemmes kun, hvis du selv gemmer den på en lokation. Appen følger dig ikke i baggrunden.</li>
+</ul>
+<p>Appen bruger ingen reklamer, ingen sporing og ingen analyseværktøjer.</p>
+
+<h2>Hvor gemmes oplysningerne?</h2>
+<ul>
+  <li><strong>Supabase</strong> (database, login og billeder) på servere i Frankfurt, EU.</li>
+  <li><strong>Anthropic</strong> (Claude) aflæser teksten på billedet af typeskiltet, når du scanner. Billedet sendes kun til aflæsning og bruges ikke til at træne modeller.</li>
+  <li><strong>Apple</strong> leverer kort og omsætter en placering til en adresse, når du sætter en knappenål på kortet.</li>
+</ul>
+
+<h2>Hvem kan se oplysningerne?</h2>
+<p>Alle aktive medarbejdere med en konto kan se demoflåden og dens historik. Administratorer kan desuden se listen over brugere og deaktivere en konto. Oplysningerne deles ikke med andre.</p>
+
+<h2>Slet din konto</h2>
+<p>Du kan til enhver tid slette din konto i appen under <strong>Profil → Slet min konto</strong>. Dit login, dit navn og din e-mail slettes. Det, du har registreret, bliver stående i historikken som "Slettet bruger", fordi demoflådens historik skal hænge sammen.</p>
+
+<h2>Kontakt</h2>
+<p>Spørgsmål om dine oplysninger kan sendes til <a href="mailto:emilegholm00@gmail.com">emilegholm00@gmail.com</a>.</p>
+
+<hr>
+<p class="muted"><a href="support.html">Support</a></p>
+</main>
+</body>
+</html>
